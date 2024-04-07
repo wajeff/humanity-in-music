@@ -2682,9 +2682,10 @@ input, select, textarea {
 			transform: scale(1.05);
 		}
 	figure.image{
-		font-size: .65rem;
+		font-size: .70rem;
 		font-style: italic;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
+		width:75%;
 	}
 		figure.image image.sidebyside{
 			border: 0;
@@ -4705,7 +4706,4 @@ input, select, textarea {
 			-ms-transform: translateX(0);
 			transform: translateX(0);
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
-			visibility: visible;
-		}
-
-	}
+			visibility: vis
