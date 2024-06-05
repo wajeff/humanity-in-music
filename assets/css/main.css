@@ -2660,7 +2660,21 @@ input, select, textarea {
 			.image.fit {
 				margin: 2rem 0;
 			}
+			.image, img{
+				width:100%
+			}
 
+			.image.main {
+				margin: 2rem 0;
+			}
+
+		}
+		@media screen and (max-width: 480px) {
+
+			.image.fit {
+				margin: 2rem 0;
+			}
+			
 			.image.main {
 				margin: 2rem 0;
 			}
