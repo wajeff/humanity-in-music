@@ -254,5 +254,7 @@
 			});
 
 		}
+	//Click Appear
+		
 
 })(jQuery);
