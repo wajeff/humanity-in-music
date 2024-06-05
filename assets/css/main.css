@@ -2671,7 +2671,7 @@ input, select, textarea {
 		overflow: hidden;
 	}
 
-		a.image img {
+		a.image img,figure.image img, img.image{
 			-moz-transition: -moz-transform 0.2s ease-out;
 			-webkit-transition: -webkit-transform 0.2s ease-out;
 			-ms-transition: -ms-transform 0.2s ease-out;
@@ -2683,6 +2683,12 @@ input, select, textarea {
 			-webkit-transform: scale(1.05);
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
+		}
+		img.image:hover, figure.image img:hover{
+			-moz-transform: scale(1.02);
+			-webkit-transform: scale(1.02);
+			-ms-transform: scale(1.02);
+			transform: scale(1.02);
 		}
 	figure.image{
 		font-size: .70rem;
