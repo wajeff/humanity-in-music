@@ -3978,6 +3978,12 @@ input, select, textarea {
 			#main {
 				width: 100%;
 			}
+			img{
+				display: block;
+				margin: 1.5rem 0;
+				width: 100%;
+				height:100%;
+			}
 
 		}
 
