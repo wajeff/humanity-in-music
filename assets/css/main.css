@@ -2681,42 +2681,48 @@ input, select, textarea {
 
 		}
 
-	a.image {
+	a.image, figure.image img, p.image img{
 		overflow: hidden;
 	}
 
-		a.image img,figure.image img, img.image{
+		a.image img, figure.image img, img{
 			-moz-transition: -moz-transform 0.2s ease-out;
 			-webkit-transition: -webkit-transform 0.2s ease-out;
 			-ms-transition: -ms-transform 0.2s ease-out;
 			transition: transform 0.2s ease-out;
+			overflow: hidden;
 		}
 
-		a.image:hover img {
+		a.image:hover img, img:hover{
 			-moz-transform: scale(1.05);
 			-webkit-transform: scale(1.05);
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
+			overflow: hidden;
 		}
-		img.image:hover, figure.image img:hover{
+		img.image:hover, figure.image img:hover, img.class:hover{
 			-moz-transform: scale(1.02);
 			-webkit-transform: scale(1.02);
 			-ms-transform: scale(1.02);
 			transform: scale(1.02);
+			overflow: hidden;
 		}
 	figure.image{
 		font-size: .70rem;
 		font-style: italic;
 		margin-bottom: 2rem;
 		width:75%;
+		overflow: hidden;
 	}
 		figure.image image.sidebyside{
 			border: 0;
 			display: inline;
 			width: 10%;
+			overflow: hidden;
 		}
 		figure.image.left{
 			max-width: 100%;
+			overflow: hidden;
 		}
 
 /* Actions */
@@ -3830,10 +3836,19 @@ input, select, textarea {
 				height: 30rem;
 
 			}
-			.responsive-youtube
-			{overflow:hidden; padding-bottom:56.25%; position:relative; height:0;}
-			.responsive-youtube iframe
-			{left:0; top:0; height:100%; width:100%; position:absolute;}
+			.responsive-youtube{
+
+				overflow:hidden; 
+				padding-bottom:56.25%; 
+				position:relative; 
+				height:0;}
+			.responsive-youtube iframe{
+
+				left:0; 
+				top:0; 
+				height:100%; 
+				width:100%; 
+				position:absolute;}
 			
 			#main > .post header.major > .date {
 				margin-top: -2rem;
@@ -3878,6 +3893,23 @@ input, select, textarea {
 			}
 
 		#main > .posts {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-moz-align-items: -moz-stretch;
+			-webkit-align-items: -webkit-stretch;
+			-ms-align-items: -ms-stretch;
+			align-items: stretch;
+			text-align: center;
+			width: 100%;
+			padding: 0;
+		}
+		#main > img{
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
