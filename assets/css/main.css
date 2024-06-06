@@ -2681,11 +2681,11 @@ input, select, textarea {
 
 		}
 
-	a.image, figure.image img, p.image img{
+	a.image, figure.image img, img.image{
 		overflow: hidden;
 	}
 
-		a.image img, figure.image img, img{
+		a.image img, figure.image:hover img, img{
 			-moz-transition: -moz-transform 0.2s ease-out;
 			-webkit-transition: -webkit-transform 0.2s ease-out;
 			-ms-transition: -ms-transform 0.2s ease-out;
@@ -2700,7 +2700,7 @@ input, select, textarea {
 			transform: scale(1.05);
 			overflow: hidden;
 		}
-		img.image:hover, figure.image img:hover, img.class:hover{
+		img.image:hover, figure.image:hover img, img.class:hover{
 			-moz-transform: scale(1.02);
 			-webkit-transform: scale(1.02);
 			-ms-transform: scale(1.02);
