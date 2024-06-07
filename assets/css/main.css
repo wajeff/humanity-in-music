@@ -154,18 +154,20 @@ input, select, textarea {
 		line-height: 2.375;
 	}
 
-	a {
+	a{
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		border-bottom: dotted 1px;
 		text-decoration: none;
+
 	}
 
-		a:hover {
+		a:hover,a:visited, a:after, a:active, a:link {
 			border-bottom-color: transparent;
 		}
+
 
 	strong, b {
 		font-weight: 600;
@@ -2068,7 +2070,8 @@ input, select, textarea {
 	input[type="reset"],
 	input[type="button"],
 	button,
-	.button {
+	.button,
+	button:after{
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -2207,7 +2210,7 @@ input, select, textarea {
 	input[type="reset"],
 	input[type="button"],
 	button,
-	.button {
+	.button{
 		background-color: transparent;
 		box-shadow: inset 0 0 0 2px #212931;
 		color: #212931 !important;
@@ -3775,7 +3778,7 @@ input, select, textarea {
 
 					#nav ul.links li a:hover {
 						color: inherit !important;
-						background-color: rgba(255, 255, 255, 0.1);
+						background-color: rgba(255, 255, 255, 0.4);
 					}
 
 				#nav ul.links li.active {
