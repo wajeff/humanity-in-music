@@ -2241,7 +2241,9 @@ input, select, textarea {
 			}
 
 /* Form */
-
+	form .d-none{
+		display:none;
+	}		
 	form {
 		margin: 0 0 2rem 0;
 	}
