@@ -2684,8 +2684,13 @@ input, select, textarea {
 	a.image, figure.image img, img.image{
 		overflow: hidden;
 	}
+	figure.image img, figure.image{
+		width:50%;
+		box-sizing: inherit;
+		overflow: hidden;
+	}
 
-		a.image img, figure.image:hover img, img{
+		a.image img,img{
 			-moz-transition: -moz-transform 0.2s ease-out;
 			-webkit-transition: -webkit-transform 0.2s ease-out;
 			-ms-transition: -ms-transform 0.2s ease-out;
@@ -2693,14 +2698,14 @@ input, select, textarea {
 			overflow: hidden;
 		}
 
-		a.image:hover img, img:hover{
+		a.image:hover img {
 			-moz-transform: scale(1.05);
 			-webkit-transform: scale(1.05);
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
 			overflow: hidden;
 		}
-		img.image:hover, figure.image:hover img, img.class:hover{
+		img.image:hover, figure.image img:hover{
 			-moz-transform: scale(1.02);
 			-webkit-transform: scale(1.02);
 			-ms-transform: scale(1.02);
